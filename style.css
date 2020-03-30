@@ -1,0 +1,49 @@
+html, body {
+    background-color: #232020;
+    min-width: 500px;
+}
+
+header {
+    color: #ff0808;
+    text-align: center;
+    font-size: 3em;
+}
+
+#instructions {
+    color: white;
+}
+
+.container-fluid {
+    background-color: #232020;
+}
+
+.instruction {
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.plus {
+    background-color: #f67280;
+}
+
+.moins {
+    background-color: #ffa372;
+}
+
+.fini {
+    background-color: #0c9463;
+}
+
+.inputBack {
+    background: #0000000e !important;
+}
+
+.try {
+    background-color: #f56315 !important;
+    border: #ffa372 !important;
+}
+
+.devine {
+    background-color: #08c528 !important;
+    border: #ffa372 !important;
+}
