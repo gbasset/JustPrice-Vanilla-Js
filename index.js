@@ -49,7 +49,6 @@ function verifier(nombre) {
         instruction.textContent = '#' + coups + " Félicitation, vous avez trouvé le juste prix  " + nombre + " !"
         instruction.className = 'instruction fini'
         input.disabled = true;
-        submit.disabled = true;
         win()
     }
     document.querySelector('#instructions').prepend(instruction)
@@ -88,4 +87,3 @@ formulaire.addEventListener('submit', (e) => {
     }
 
 })
-
