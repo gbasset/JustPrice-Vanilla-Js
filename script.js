@@ -3,11 +3,10 @@ let input = document.querySelector('#prix')
 let error = document.querySelector('small')
 let formulaire = document.querySelector('#formulaire')
 let tryAgain = document.querySelector('.try')
-let submit = document.querySelector('.btn-primary')
+let devine = document.querySelector('#devine')
 
 // Etape 2 - Cacher l'erreur
 error.style.display = 'none'
-
 
 // Etape 3 - Générer un nombre aléatoire
 let nombreAleatoire = Math.floor(Math.random() * 1001);
@@ -87,3 +86,34 @@ formulaire.addEventListener('submit', (e) => {
     }
 
 })
+
+
+// window.onscroll = function () { myFunction() };
+
+// function myFunction() {
+//     var x = document.body.scrollTop || document.documentElement.scrollTop;
+//     if (x > 150) { document.querySelector("container-fluid") }
+//     else if (x > 100) {
+//         console.log('x>100', x);
+//     }
+//     else if (x > 50) {
+//         console.log('x>50', x);
+
+//     } else {
+//         console.log('le firrst', x);
+
+//     }
+//     console.log('taille de scroll', x);
+
+// }
+
+
+// window.onscroll = function getScrollPercent() {
+//     var scrollTop = document.body.scrollTop,
+//         windowHeight = window.innerHeight,
+//         scrollheight = document.body.scrollHeight;
+//     scrollTop = (scrollTop / (scrollheight - windowHeight)) * 100
+//     console.log(scrollTop)
+//     console.log('-------------');
+
+// }
