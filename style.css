@@ -3,6 +3,31 @@ html, body {
     min-width: 500px;
 }
 
+img {
+    width: 200px;
+}
+
+.article {
+    padding: 5px;
+    background-color: rgb(58, 58, 58);
+    height: 380px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 2px 11px 36px -16px rgba(0, 0, 0, 0.75);
+    margin: 10px auto 5px auto;
+}
+
+.titleAArticle {
+    color: rgb(233, 233, 233);
+}
+
+.history {
+    color: rgb(233, 233, 233);
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
 header {
     color: crimson;
     text-align: center;
