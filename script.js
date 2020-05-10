@@ -9,160 +9,182 @@ let devine = document.querySelector('#devine')
 error.style.display = 'none'
 
 // Etape 3 - Générer un nombre aléatoire
+
 let nombreAleatoire = Math.floor(Math.random() * 1001);
+//  lien: "https://drive.google.com/uc?id=1Ml6bmV00gOcK8ZR8DAlbpgNLlvL_rS5n",
 let coups = 0;
 let nombreChoisi;
 const arrayArticles = [
     {
         nom: 'Lunettes Alain FlouAffle',
-        lien: "https://drive.google.com/uc?id=1Ml6bmV00gOcK8ZR8DAlbpgNLlvL_rS5n",
+        lien: "./imagesJeux/photo-1475312775467-159e03aaa7cd.jfif",
         message: 'Il est dingue AffleLLou , il est dingue !',
-        Prix: '180€'
+        Prix: '580€'
     },
 
     {
         nom: 'Baskettes NiKe ',
-        lien: "https://drive.google.com/uc?id=1FkDiwQRuh7RE3WZ3efBlp_rkVFmj43nq",
-        message: 'Il jhjhj , il est dingue !',
+        lien: "./imagesJeux/photo-1542291026-7eec264c27ff.jfif",
+        message: 'Cours Forest cours !! !',
         Prix: '180€'
     },
     {
-        nom: 'Airbus de mes deux',
-        lien: "https://drive.google.com/uc?id=1WF03epKk-umeHW_myjxjUjXam3jZlhbL",
-        message: 'Il jhjhj , il est dingue !',
+        nom: 'Avion qui vole !',
+        lien: "./imagesJeux/airplane.jpeg",
+        message: 'Vroooum !',
         Prix: '180€'
     },
     {
         nom: 'Canard en platock',
-        lien: "https://drive.google.com/uc?id=1i5si7XpPrySWbghSrvH4BfO81QChMQGB",
-        message: 'Il jhjhj , il est dingue !',
+        lien: "./imagesJeux/duckplastic.jfif",
+        message: 'Coin Coin !',
         Prix: '180€'
     },
     {
         nom: 'NoNoss',
-        lien: "https://drive.google.com/uc?id=1JjfYvUqAj2AkC6dSp5W0-0c1YitaQ-yv",
-        message: 'Il jhjhj , il est dingue !',
+        lien: "./imagesJeux/osos.jfif",
+        message: 'On est tombé sur un os !',
         Prix: '180€'
     },
     {
         nom: 'Chaussettes',
-        lien: "https://drive.google.com/uc?id=1WjrztSjyaK6DdgjHB5Q-yT-9H0aF4EFV",
-        message: 'Il jhjhj , il est dingue !',
+        lien: "./imagesJeux/chaussettes.jfif",
+        message: 'Un homme qui garde des chaussettes de ville avec un bermuda ne peut pas être totalement mauvais. !',
         Prix: '180€'
     },
     {
         nom: 'Ferrarie',
-        lien: "https://drive.google.com/uc?id=1hvAN-RP5MhaGyo0aNHsrT6X_n9WIud5W",
-        message: 'Il jhjhj , il est dingue !',
+        lien: "./imagesJeux/ferrarie.jpeg",
+        message: 'Allez Schumacher !',
         Prix: '180€'
     },
     {
         nom: 'Arc de Triomphe',
-        lien: "https://drive.google.com/uc?id=1E7mscyceZ46-j9P_N5h1GRiiD-nR6kad",
-        message: 'Il jhjhj , il est dingue !',
+        lien: "./imagesJeux/arctriomphe.jfif",
+        message: 'Ah àa, c\'est ma porte ...',
         Prix: '180€'
     },
     {
         nom: 'Cullotte',
-        lien: "https://drive.google.com/uc?id=1fVwGhXk1I5a2fHZv8BIfxvbS1lTAHpJA",
-        message: 'Il jhjhj , il est dingue !',
+        lien: "./imagesJeux/culotte.jfif",
+        message: 'T\'as pas vu mon slibard ?',
         Prix: '180€'
     },
     {
         nom: 'PQ',
-        lien: "https://drive.google.com/uc?id=1wd65HORR5_XrpqWW9QxaDYE6XNoCbaWu",
-        message: 'Il jhjhj , il est dingue !',
+        lien: "./imagesJeux/pq.jfif",
+        message: 'Avant le Covid c\'etait pas cher !',
         Prix: '180€'
     },
     {
         nom: 'Saucisse',
-        lien: "https://drive.google.com/uc?id=1mJXiaACS1m2Eyipi0tMaszCh8mRa_uT9",
-        message: 'Il jhjhj , il est dingue !',
+        lien: "./imagesJeux/saucisse.jfif",
+        message: 'Barbeuc Party !',
         Prix: '180€'
     },
     {
         nom: 'Fusée',
-        lien: "https://drive.google.com/uc?id=1SNo4TDm9wCpdwNN8aKeCCWPXr-iBX2Hf",
-        message: 'Il jhjhj , il est dingue !',
+        lien: "./imagesJeux/rocket.jpg",
+        message: 'C’est un petit pas pour l’homme, un grand pas pour l’humanité ',
         Prix: '180€'
     },
-    ,
+
     {
         nom: 'Chat de Noel',
-        lien: "https://drive.google.com/uc?id=18HKr-ei6dNobxlJn7sXA68mj63YS15Yk",
-        message: 'Il jhjhj , il est dingue !',
+        lien: "./imagesJeux/chatnoel.webp",
+        message: 'Miaou Miaouh !',
         Prix: '180€'
     },
     {
         nom: 'Un Nokia 3310',
-        lien: "https://drive.google.com/uc?id=191OXx3rXHheogMweXq47p0vp8jfoPh87",
-        message: 'Il jhjhj , il est dingue !',
+        lien: "./imagesJeux/nokia.webp",
+        message: 'Toujours aussi solide  !',
         Prix: '180€'
     },
     {
         nom: 'Un Superbe chandelier',
-        lien: "https://drive.google.com/uc?id=1mAr3DM_C7lC6eKkFLBMFgEHP4hpdLEG9",
-        message: 'Il jhjhj , il est dingue !',
-        Prix: '180€'
-    },
-    {
-        nom: 'Un Nokia 3310',
-        lien: "https://drive.google.com/uc?id=1mAr3DM_C7lC6eKkFLBMFgEHP4hpdLEG9",
-        message: 'Il jhjhj , il est dingue !',
+        lien: "./imagesJeux/chandelier.webp",
+        message: 'Aziz, Lumière !',
         Prix: '180€'
     },
     {
         nom: 'Une boite de croquettes',
-        lien: "https://drive.google.com/uc?id=1mAr3DM_C7lC6eKkFLBMFgEHP4hpdLEG9",
-        message: 'Il jhjhj , il est dingue !',
+        lien: "./imagesJeux/croquettes.webp",
+        message: 'Parce qu\'il le vaut bien !',
         Prix: '180€'
     },
     {
         nom: 'Une brosse à dents',
-        lien: "https://drive.google.com/uc?id=1_hsfUTSpvQLtHnTZQgC6sJ1GrVQMntIh",
-        message: 'Il jhjhj , il est dingue !',
+        lien: "./imagesJeux/brosseadents.jfif",
+        message: 'Le sourire avec des dents !',
         Prix: '180€'
     },
     {
         nom: 'Un mixeur',
-        lien: "https://drive.google.com/uc?id=1C98CNhiXY4vTe3_u45ALJSnsWKCDQIbB",
-        message: 'Il jhjhj , il est dingue !',
+        lien: "./imagesJeux/food-mixer-413737__340.webp",
+        message: ' Mix by Dj Laurent Garnier',
         Prix: '180€'
     },
     {
         nom: 'Un coupe ongles',
-        lien: "https://drive.google.com/uc?id=1GF0Y9VofkeRduLuN9zTHTqKk7X6NgxsZ",
-        message: 'Il jhjhj , il est dingue !',
+        lien: "./imagesJeux/coupeongle.jfif",
+        message: 'Coupe moi donc l\'onglet!',
         Prix: '180€'
     },
     {
         nom: 'Une tondeuse',
-        lien: "https://drive.google.com/uc?id=1pB1RmVSXmDICSQyOesqjDhAgQXVE7WIq",
-        message: 'Il jhjhj , il est dingue !',
+        lien: "./imagesJeux/tondeuse.jpg",
+        message: 'Coupe coupe!',
         Prix: '180€'
     },
     {
         nom: 'Un rasoir',
-        lien: "https://drive.google.com/uc?id=1UMjjWQ3Z7ELykO0DsZ-4JQENJtM2tUPY",
-        message: 'Il jhjhj , il est dingue !',
+        lien: "./imagesJeux/razorpexels-photo-995300.jpeg",
+        message: 'Renh t\'es rasoir!',
         Prix: '180€'
     },
     {
         nom: 'Un Mackintosk',
-        lien: "https://drive.google.com/uc?id=1oNA77a7l3A2CSkexaFePraozDFwBVkNg",
-        message: 'Il jhjhj , il est dingue !',
+        lien: "./imagesJeux/macintosh.jfif",
+        message: 'C\'est donc lui le Mac!',
         Prix: '180€'
     },
     {
         nom: 'Un Valise',
-        lien: "https://drive.google.com/uc?id=1GuCaiZLr3fqzV9dXz3EYzOBkqzcaVMO0",
-        message: 'Il jhjhj , il est dingue !',
+        lien: "./imagesJeux/valise.webp",
+        message: 'Tu prends tes clics, tes clacs. Et tu te tailles.',
+        Prix: '180€'
+    },
+
+    {
+        nom: 'Un vachette',
+        lien: "./imagesJeux/cow-pasture-animal-almabtrieb.jpg",
+        message: 'les produits laitiers sont nos amis pour la vie',
         Prix: '180€'
     },
 
 ]
-let NumArticleAleatoire = Math.floor(Math.random() * arrayArticles.length);
-let numberOfLength
+let NumArticleAleatoire;
+const getNumber = () => {
+    NumArticleAleatoire = Math.floor(Math.random() * Math.floor(arrayArticles.length))
+}
+getNumber()
+let numOfPrevArticle;
+if (localStorage.getItem('prev')) {
+    numOfPrevArticle = localStorage.getItem('prev')
+    if (numOfPrevArticle === NumArticleAleatoire) {
+        getNumber()
+    }
+    localStorage.setItem('prev', NumArticleAleatoire)
+}
+if (!localStorage.getItem('prev')) {
+    localStorage.setItem('prev', NumArticleAleatoire)
+}
+
+console.log('NumArticleAleatoire', NumArticleAleatoire);
+console.log('numOfPrevArticle', numOfPrevArticle);
+// let numberOfLength
+// let nombreAleatoire = NumArticleAleatoire.Prix
 // Generer un article aléatoire
 function getAleatoireArticle(num) {
     numberOfLength = arrayArticles[num]
@@ -200,18 +222,18 @@ const win = () => {
 function verifier(nombre) {
     let instruction = document.createElement('div')
     if (nombre < nombreAleatoire) {
-        instruction.textContent = '#' + coups + " C\'est plus que " + nombre + " !"
+        instruction.textContent = '#' + coups + " C\'est plus que " + nombre + "€" + " !"
         instruction.className = 'instruction plus'
         loose()
 
     }
     else if (nombre > nombreAleatoire) {
-        instruction.textContent = '#' + coups + " C\'est moins que " + nombre + " !"
+        instruction.textContent = '#' + coups + " C\'est moins que " + nombre + "€" + " !"
         instruction.className = 'instruction moins'
         loose()
     }
     else {
-        instruction.textContent = '#' + coups + " Félicitation, vous avez trouvé le juste prix  " + nombre + " !"
+        instruction.textContent = '#' + coups + " Félicitation, vous avez trouvé le juste prix  " + nombre + "€" + " !"
         instruction.className = 'instruction fini'
         input.disabled = true;
         win()

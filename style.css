@@ -14,7 +14,7 @@ img {
     width: 250px;
     border-radius: 10px;
     box-shadow: 2px 11px 36px -16px rgba(0, 0, 0, 0.75);
-    margin: 10px auto 5px auto;
+    margin: 60px auto 5px auto;
 }
 
 .titleAArticle {
@@ -29,9 +29,19 @@ img {
 }
 
 header {
-    color: crimson;
+    margin-top: 5%;
+    color: rgb(255, 253, 253);
     text-align: center;
     font-size: 3em;
+}
+
+.titleBegin {
+    width: 290px;
+    background-color: rgb(58, 58, 58);
+    box-shadow: 2px 11px 36px -16px rgba(0, 0, 0, 0.75);
+    margin-bottom: 0px;
+    border-radius: 3px;
+    padding: 3px;
 }
 
 #instructions {
@@ -66,4 +76,8 @@ header {
 .try {
     background-color: #f56315 !important;
     border: #ffa372 !important;
+}
+
+.instru {
+    margin-top: 10%;
 }

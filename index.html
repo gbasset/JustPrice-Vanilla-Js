@@ -21,46 +21,51 @@
         <audio id='victorySound'>
             <source src="./victoire.mp3" type="audio/mpeg">
         </audio>
-        <div class="row justify-content-center mt-5">
+        <div class="row justify-content-center mt-5 fixed-top ">
             <header>
-                <h1> Le Juste Prix </h3>
-                    <h5> Arriverez-vous à deviner le juste Prix ??</h5>
-                    <div class="article">
-                        <h3 class="titleAArticle">titre
-                </h1>
-                <div class="imageOfArticle" alt="Card image cap"> </div>
-                <p class="history">Ceci est un article</p>
+                <div class="titleBegin">
+                    <h1> Le Juste Prix </h1>
+                    <h5> Arriverez-vous à deviner le juste Prix ?</h5>
+                    <h5> Entre 0 et 1000 </h5>
+                </div>
+
+                <div class="article">
+                    <h3 class="titleAArticle">titre
+                        </h1>
+                        <div class="imageOfArticle" alt="Card image cap"> </div>
+                        <p class="history"></p>
+                </div>
+            </header>
         </div>
-        </header>
-    </div>
 
-    <!-- Formulaire -->
-    <div class="row justify-content-center mt-1 mb-4 background ">
-        <div class="col-lg-8 ">
-            <div class="p-4 rounded inputBack">
+        <!-- Formulaire -->
+        <div class="row justify-content-center col-xs-4 mt-1 mb-4 background  fixed-top ">
+            <div class="col-lg-8 ">
+                <div class="p-4 rounded inputBack">
 
-                <form id="formulaire">
-                    <div class="row">
-                        <div class="col">
-                            <input id="prix" class="form-control"
-                                placeholder="Devinez le prix ! (tapez un chiffre entre 0 et 1 000 puis la touche entrer) " />
+                    <form id="formulaire">
+                        <div class="row">
+                            <div class="col">
+                                <input id="prix" class="form-control col-xs-2"
+                                    placeholder="Devinez le prix ! (tapez un chiffre entre 0 et 1 000 puis la touche entrer) " />
+                            </div>
+                            <button type="submit" id='devine' class="btn btn-success ">Deviner <i
+                                    class="fas fa-search-dollar"></i></button>
+
+                            <button class="btn btn-danger  ml-4 try">Recommencer <i
+                                    class="fas fa-sync-alt"></i></button>
                         </div>
-                        <button type="submit" id='devine' class="btn btn-success ">Deviner <i
-                                class="fas fa-search-dollar"></i></button>
+                        <small class="text-danger">Vous devez rentrer un nombre.</small>
+                    </form>
 
-                        <button class="btn btn-danger  ml-4 try">Recommencer <i class="fas fa-sync-alt"></i></button>
-                    </div>
-                    <small class="text-danger">Vous devez rentrer un nombre.</small>
-                </form>
-
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Instructions -->
-    <div class="row justify-content-center">
-        <div id="instructions" class="col-lg-8"></div>
-    </div>
+        <!-- Instructions -->
+        <div class="row justify-content-center overflow-auto instru ">
+            <div id="instructions" class="col-lg-8 "></div>
+        </div>
 
     </div>
 
